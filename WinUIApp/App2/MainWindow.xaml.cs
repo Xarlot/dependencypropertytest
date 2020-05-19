@@ -16,7 +16,7 @@ namespace App2 {
         private void Button_Click(object sender, RoutedEventArgs e) {
             var testClass = new TestClass<int>();
             Stopwatch sw = Stopwatch.StartNew();
-            for (int i = 0; i < 20000; i++)
+            for (int i = 0; i < 200000; i++)
                 testClass.Test = i++;
             Title = sw.ElapsedMilliseconds.ToString();
         }
@@ -25,7 +25,7 @@ namespace App2 {
             var testClass = new TestClass<int>();
             Stopwatch sw = Stopwatch.StartNew();
             int test = 0;
-            for (int i = 0; i < 20000; i++)
+            for (int i = 0; i < 200000; i++)
                 test += testClass.Test;
             Title = sw.ElapsedMilliseconds.ToString();
         }
