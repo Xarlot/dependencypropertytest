@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "App36": {
+      "commandName": "Project",
+      "commandLineArgs": "arg1 arg2"
+    }
+  }
+}
